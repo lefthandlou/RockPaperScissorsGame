@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    align-content: center;
+    background-color:rgb(255,218,193);
+    font-family: monospace;
+    color: #64619e
+}
+
+.main-header {
+    text-shadow: 2px 2px white;
+    font-size: 35px;
+    margin: 15px;
+}
+
+/*Game play body*/
+.main-game-body {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex: 0 1 45%;
+    min-width: 485px;
+}
+
+/* Buttons */
+.playerButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rock-button,
+.paper-button,
+.scissors-button { 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+button {
+    font-family: monospace;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(181,234,215);
+    border: 3px solid white;
+    border-radius: 40px;
+    color: #64619e;
+}
+
+/*Score keeper*/
+.outcomes {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    margin-bottom: 35px;
+}
+
+.score-title {
+    background-color: rgb(255,154,162);
+    margin: 0px;
+    border-bottom: 3px solid white;
+}
+
+.p-c-scores {
+    display:flex; 
+    height: 80px;
+}
+
+.player-score,
+.computer-score {
+    background-color: rgb(232, 236, 252);
+    min-width: 239px;
+}
+
+.player-score {
+    border-right: 3px solid white;
+}
+
+/*Play round display*/
+.game-window {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*Player and computer choices display*/
+.main-round-window {
+    display: flex;
+    flex-direction: column;
+}
+
+.the-play-display {
+    display: flex;
+    background-color: rgb(226,240,203);
+    border: 3px solid white;
+}
+
+.player-chooses, 
+.computer-chooses  {
+    display: flex;
+    flex-direction: column;
+    min-width: 234px;   
+}
+
+.player-chooses {
+    border-right: 3px solid white;
+}
+
+.choice-header {
+    border-bottom: 3px solid white;
+    margin: 0px;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(153,213,191)
+}
+
+.player-play, 
+.computer-play {
+    height: 300px;
+}
+
+/*Round result display*/
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 400px;
+    margin-top: 30px;
+    border: 3px solid white;
+    background-color: rgb(252,244,221);
+    height:105px;
+}
+
+.results {
+    margin-bottom: 15px;
+}
